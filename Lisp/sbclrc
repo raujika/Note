@@ -1,0 +1,28 @@
+;;; The following lines added by ql:add-to-init-file:
+#-quicklisp
+(let ((quicklisp-init (merge-pathnames "quicklisp/setup.lisp"
+                                       (user-homedir-pathname))))
+  (when (probe-file quicklisp-init)
+    (load quicklisp-init)))
+
+(defun get-all-symbols (&optional package)
+  (let ((lst ())
+        (package (find-package package)))
+    (do-all-symbols (s lst)
+      (when (fboundp s)
+        (if package
+            (when (eql (symbol-package s) package)
+              (push s lst))
+            (push s lst))))
+    lst))
+
+;;; lis
+(format t ";List package~a~%"                    '(list-all-packages))
+(format t ";List function in package~a~%"         '(get-all-symbols))
+(format t ";自動下載軟件包~a~%"                      '(ql:quickload system-name))
+(format t ";搜索帶有substring的軟件包~a~%"           '(ql:system-apropos substring))
+(format t ";啟動時自動加載Quicklisp~a~%"             '(ql:add-to-init-file))
+(format t ";安裝提供給SLIME的Quicklisp助手~a~%"      '(ql:quickload "quicklisp-slime-helper"))
+(format t ";獲取第三方軟件包更新~a~%"                 '(ql:update-all-dists))
+(format t ";更新 Quicklisp~a~%"                    '(ql:update-client))
+(format t ";看特定軟件包的依賴關係~a~%"               '(ql:who-depends-on system-name))
