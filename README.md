@@ -1,2 +1,3 @@
 Some code fragment
-https clone url: https://github.com/raujika/Note.git
+git remote add origin https://github.com/raujika/Note.git
+git push origin master
