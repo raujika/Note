@@ -43,6 +43,33 @@ instance MF Tr where
   kmap f (Leaf x)       = Leaf   (f x)
   kmap f (Branch t1 t2) = Branch (kmap f t1) (kmap f t2)
 
+--Recursively-Defined
+data T a = N | I a (T a)          deriving (Show)
+
+instance Functor T where
+    fmap f (I x z) = I (f x) (fmap f z)
+    fmap _ N       = N 
+
+--Currying
+f x y = y x
+g x = \y -> f x y 
+
+--Monad
+newtype Wrapped a = Wrap {unwrap :: a}
+
+instance Monad Wrapped where 
+    (>>=) (Wrap x) f =  f x 
+    return x = Wrap x
+
+divwrp :: Wrapped Double -> Wrapped Double -> Wrapped Double 
+divwrp x y = do u <- x 
+                v <- y 
+                return (u/v)
+
+--unwrap (divwrp (Wrap 3.0) (Wrap 5.0)
+
+main = putStr "aa"
+
 -- (\x -> x++"f") . (\x -> x++"s") $ "x"
 -- "xsf"
 
@@ -51,7 +78,7 @@ instance MF Tr where
 --do x1 <- action1
 --   x2 <- action2
 --   action3 x1 x2
---
+--((parse stdin) >>= \ expr -> let (Eval cp) = eval exp;cp (Nothing, 2048) (const return))
 --action1 >>= \ x1 ->
 --action2 >>= \ x2 ->
 --action3 x1 x2
