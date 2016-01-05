@@ -72,7 +72,12 @@ main = putStr "aa"
 
 -- (\x -> x++"f") . (\x -> x++"s") $ "x"
 -- "xsf"
-
+--hof
+--($) :: (a -> b) -> a -> b
+--f $ x = f x
+--
+--(.) :: (b -> c) -> (a -> b) -> a -> c
+--f . g = \x -> f (g x)
 
 --the "DO"
 --do x1 <- action1
