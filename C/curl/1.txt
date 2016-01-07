@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>curl and libcurl</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="http://curl.haxx.se/curl.css">
+<link rel="shortcut icon" href="http://curl.haxx.se/favicon.ico">
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<div class="main">
+<div class="menu">
+<a href="http://curl.haxx.se/changes.html" class="menuitem" title="The changes done in releases">Changelog</a>
+<a href="http://curl.haxx.se/dev/" class="menuitem" title="Resources for development and developers">Development</a>
+<a href="http://curl.haxx.se/docs/" class="menuitem" title="curl documentation">Documentation</a>
+<a href="http://curl.haxx.se/download.html" class="menuitem" title="Get curl packages">Download</a>
+<a href="http://curl.haxx.se/libcurl/" class="menuitem" title="libcurl web site section">libcurl</a>
+<a href="http://curl.haxx.se/mail/" class="menuitem" title="Mailing List info and archives">Mailing Lists</a>
+<a href="http://curl.haxx.se/news.html" class="menuitem" title="Recent events and news in the project">News</a>
+</div>
+<div class="contents">
+<center><img src="http://curl.haxx.se/pix/curl-refined.jpg" alt="cURL" style="width:90%; max-width: 471px;">
+</center>
+<hr>
+<p><b>curl is an open source command line tool and library</b> for transferring
+data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS,
+IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMTP,
+SMTPS, Telnet and TFTP.  curl supports SSL certificates, HTTP POST, HTTP PUT,
+FTP uploading, HTTP form based upload, proxies, HTTP/2, cookies, user+password
+authentication (Basic, Plain, Digest, CRAM-MD5, NTLM, Negotiate and Kerberos),
+file transfer resume, proxy tunneling and more.
+<p><b>What's curl used for?</b>
+<p>
+curl is used in command lines or scripts to transfer data. It is also used in
+cars, television sets, routers, printers, audio equipment, mobile phones,
+tablets, settop boxes, media players and is the internet transfer backbone for
+thousands of software applications totally affecting more than <i>one billion
+users</i>.
+<p><b>Who makes curl?</b>
+<p>
+curl is free and <a href="docs/copyright.html" title="curl and libcurl are licensed under a MIT/X derivate license">open software</a> that compiles and
+runs under a wide variety of operating systems. curl exists thanks
+to <a href="docs/thanks.html" title="More than 1200 named contributors">thousands of contributors</a>.
+<p><b>What's the latest curl?</b>
+<p>
+The most recent stable version is <b>7.46.0</b>, released on 2nd of December 2015.
+Currently, 88 of the listed <a href="download.html" title="Binary download packages for your platform!">downloads</a> are of the latest version.
+<p><b>Where's the code?</b>
+<p>
+ Check out the latest <a href="https://github.com/bagder/curl" title="git clone the curl code">source code
+ from github</a>.
+</div>
+</div>
+</BODY>
+</HTML>
+

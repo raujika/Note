@@ -1,0 +1,25 @@
+Connected
+
+Data Send
+
+Reply received
+
+HTTP/1.1 302 Found
+Cache-Control: no-cache, no-store
+Location: http://www.msn.com/zh-hk?st=1
+Server: Microsoft-IIS/8.5
+X-UA-Compatible: IE=Edge;chrome=1
+Edge-control: no-store
+Set-Cookie: _FS=NU=1; domain=.msn.com; path=/
+Set-Cookie: _HOP=I=1&TS=1451209022; domain=.msn.com; path=/
+Set-Cookie: _SS=SID=907092BCD49F4406B988D88B83D2C6FB; domain=.msn.com; path=/
+Set-Cookie: MUID=26DE133446FC654E129B1BBE47EF6511; expires=Tue, 26-Dec-2017 09:37:02 GMT; domain=.msn.com; path=/
+Set-Cookie: MUIDB=26DE133446FC654E129B1BBE47EF6511; expires=Tue, 26-Dec-2017 09:37:02 GMT; path=/
+Set-Cookie: SRCHD=D=4201057&AF=NOFORM; expires=Tue, 26-Dec-2017 09:37:02 GMT; domain=.msn.com; path=/
+Set-Cookie: SRCHUID=V=2&GUID=5090EAD1E4984E3581D2AC0CEF9EFCAF; expires=Tue, 26-Dec-2017 09:37:02 GMT; path=/
+Set-Cookie: SRCHUSR=AUTOREDIR=0&GEOVAR=&DOB=20151227; expires=Tue, 26-Dec-2017 09:37:02 GMT; domain=.msn.com; path=/
+P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+Date: Sun, 27 Dec 2015 09:37:01 GMT
+Content-Length: 0
+
+
