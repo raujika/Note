@@ -55,7 +55,7 @@ f x y = y x
 g x = \y -> f x y 
 
 --Monad
-newtype Wrapped a = Wrap {unwrap :: a}
+newtype Wrapped a = Wrap {unwrap :: a} deriving (Show)
 
 instance Monad Wrapped where 
     (>>=) (Wrap x) f =  f x 
@@ -65,7 +65,11 @@ divwrp :: Wrapped Double -> Wrapped Double -> Wrapped Double
 divwrp x y = do u <- x 
                 v <- y 
                 return (u/v)
-
+--
+--list monad
+--return 1 = [1]
+--[1,2,3] >>= (\x -> [x+1] = [2,3,4]
+--
 --unwrap (divwrp (Wrap 3.0) (Wrap 5.0)
 
 main = putStr "aa"
