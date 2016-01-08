@@ -67,6 +67,7 @@ divwrp x y = do u <- x
                 return (u/v)
 
 --unpack io monad
+--import System.IO.Unsafe
 --putStrLn ((unsafePerformIO (getLine >>= \x -> return x))++"!")
 
 --
