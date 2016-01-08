@@ -65,6 +65,10 @@ divwrp :: Wrapped Double -> Wrapped Double -> Wrapped Double
 divwrp x y = do u <- x 
                 v <- y 
                 return (u/v)
+
+--unpack io monad
+--putStrLn ((unsafePerformIO (getLine >>= \x -> return x))++"!")
+
 --
 --list monad
 --return 1 = [1]
