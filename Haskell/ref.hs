@@ -1,3 +1,4 @@
+import System.Environment(getArgs)
 -- Continuation Passing Style
 
 cps :: (a -> b -> (b -> b) -> b) -> b -> [a] -> b
@@ -26,7 +27,6 @@ quicksort (p:xs) = (quicksort lesser) ++ [p] ++ (quicksort greater)
 qsort [] = []
 qsort (p:xs) = (qsort [x | x <- xs, x < p]) ++ [p] ++ (qsort [x | x <- xs, x >= p])
 
-import System.Environment(getArgs)
 
 main :: IO()
 main = do
@@ -34,7 +34,6 @@ main = do
        print args
 
 data Tr x = Leaf x | Branch (Tr x) (Tr x)
-data MF = [Char]
 
 class MF f where
   kmap                  :: (a -> b) -> f a -> f b
@@ -55,6 +54,14 @@ f x y = y x
 g x = \y -> f x y 
 
 --Monad
+{--
+instance Functor Wrapped where
+  fmap f (Wrap x) = Wrap (f x)
+
+instance Applicative Wrapped where
+  pure = Wrap
+  Wrap f <*> Wrap x = Wrap (f x)
+ --}
 newtype Wrapped a = Wrap {unwrap :: a} deriving (Show)
 
 instance Monad Wrapped where 
