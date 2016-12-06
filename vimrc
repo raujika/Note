@@ -1,8 +1,8 @@
 set nocompatible                " be iMproved
 filetype off                    " required!
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
-
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
