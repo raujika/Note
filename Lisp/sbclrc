@@ -16,13 +16,19 @@
             (push s lst))))
     lst))
 
+
+(let* ((*standard-output* (make-broadcast-stream)) (*error-output* *standard-output*))
+	(ql:quickload "cffi")
+)
+
 ;;; lis
-(format t ";List package~a~%"                    '(list-all-packages))
-(format t ";List function in package~a~%"         '(get-all-symbols))
-(format t ";自動下載軟件包~a~%"                      '(ql:quickload system-name))
-(format t ";搜索帶有substring的軟件包~a~%"           '(ql:system-apropos substring))
-(format t ";啟動時自動加載Quicklisp~a~%"             '(ql:add-to-init-file))
-(format t ";安裝提供給SLIME的Quicklisp助手~a~%"      '(ql:quickload "quicklisp-slime-helper"))
-(format t ";獲取第三方軟件包更新~a~%"                 '(ql:update-all-dists))
-(format t ";更新 Quicklisp~a~%"                    '(ql:update-client))
-(format t ";看特定軟件包的依賴關係~a~%"               '(ql:who-depends-on system-name))
+(format t "Check package that function belong to~a~%"  '(list-all-packages))
+(format t ";List package~a~%"                          '(list-all-packages))
+(format t ";List function in package~a~%"              '(get-all-symbols))
+(format t ";自動下載軟件包~a~%"                        '(ql:quickload system-name))
+(format t ";搜索帶有substring的軟件包~a~%"             '(ql:system-apropos substring))
+(format t ";啟動時自動加載Quicklisp~a~%"               '(ql:add-to-init-file))
+(format t ";安裝提供給SLIME的Quicklisp助手~a~%"        '(ql:quickload "quicklisp-slime-helper"))
+(format t ";獲取第三方軟件包更新~a~%"                  '(ql:update-all-dists))
+(format t ";更新 Quicklisp~a~%"                        '(ql:update-client))
+(format t ";看特定軟件包的依賴關係~a~%"                '(ql:who-depends-on system-name))
