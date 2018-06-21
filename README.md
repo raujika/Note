@@ -111,7 +111,7 @@ ctrl+t
 /usr/include/linux/input.h
 --get kernel message
 journalctl -k
---
+--get bus definition
 cat /proc/bus/input/devices
 --nodejs tty
 tty.js --port 8080
