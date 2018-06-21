@@ -1,0 +1,1 @@
+cmd_/home/raujikachu/code/Note/LinuxDriver/drive064/drive064.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/raujikachu/code/Note/LinuxDriver/drive064/drive064.ko /home/raujikachu/code/Note/LinuxDriver/drive064/drive064.o /home/raujikachu/code/Note/LinuxDriver/drive064/drive064.mod.o ;  true

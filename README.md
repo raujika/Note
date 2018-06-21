@@ -16,6 +16,8 @@ sudo smbpasswd -a raujikachu
 
 testparm
 
+sudo setenforce 0
+
 systemctl disable firewalld
 
 systemctl stop firewalld
@@ -85,3 +87,31 @@ ctags -R *
 --curl
 
 curl http://some.url --output some.file
+
+--search header
+
+sudo yum whatprovides '*/varargs.h'
+dnf provides "*/ndbm.h"
+grep -rn "struct _IO_FILE {" --include="*.h" /usr/include
+
+--remove interface(fedora)
+ifconfig interface down
+
+--prog with same name such as ld
+alternatives --config ld
+
+--check git
+git submodule update --init --recursive
+
+--vim
+
+ctrl+]
+ctrl+t
+--linux kernel input header
+/usr/include/linux/input.h
+--get kernel message
+journalctl -k
+--
+cat /proc/bus/input/devices
+--nodejs tty
+tty.js --port 8080
